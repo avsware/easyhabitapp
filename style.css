@@ -101,10 +101,12 @@ body {
 
 .container #habits-container #habits-title h2 {
   font-size: 32px;
+  font-weight: 400;
 }
 
 .container #habits-container #habits-title h2 span {
   color: #FFC579;
+  font-weight: 700;
 }
 
 .container #habits-container #habits-title #habits {
