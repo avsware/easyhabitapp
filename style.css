@@ -98,14 +98,14 @@ body >div {
 
 .container .section-container {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 128px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
 .section-container:last-of-type {
-  margin-bottom: 100px;
+  margin-bottom: 128px;
 }
 
 .container #habits-container #habits-title h2 {
@@ -148,6 +148,49 @@ body >div {
 .container #habits-container #habits-description p {
   font-size: 20px;
   text-align: right;
+  max-width: 301px;
+}
+
+.container #stats-container #stats-title h2 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.container #stats-container #stats-title h2 span {
+  color: #FFC579;
+  font-weight: 700;
+}
+
+.container #stats-container #stats-title #stats {
+  max-width: 536px;
+  margin-top: 48px;
+  padding: 0;
+}
+
+.container #stats-container #stats-description {
+  width: 580px;
+  height: 560px;
+  padding: 64px;
+  line-height: 32px;
+  border-radius: 32px;
+  background: #D4896E;
+  margin-right: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -1;
+  color: #EDCFC4;
+}
+
+.container #stats-container #stats-description h3 {
+  max-width: 317px;
+  font-size: 28px;
+}
+
+.container #stats-container #stats-description p {
+  font-size: 20px;
   max-width: 301px;
 }
 
