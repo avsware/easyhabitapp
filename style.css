@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,31 +10,132 @@ body {
 }
 
 .container {
-  padding-top: 64px;
   max-width: 1024px;
   width: 100%;
 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #383637;
+}
+
+.container section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .headline {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
-.container .title-container {
-  margin-top: 24px;
-  margin-left: -128px;
+.container .headline .app-img {
+  animation: go-forward 1.4s;
 }
 
-.container .title-container .logo-img {
+.container .headline .title-container {
+  margin-top: 100px;
+  margin-left: -128px;
+  animation: go-back 1.6s;
+}
+
+@keyframes go-back {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes go-forward {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.container .headline .title-container .logo-img {
   width: 276px;
 }
 
-.container .title-container .subtitle {
+.container .headline .title-container .subtitle {
   font-size: 20px;
-  color: #383637;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container .title-container .subtitle strong {
+.container .headline .title-container .subtitle strong {
   font-style: italic;
   background: #FFC579;
+}
+
+.container section #chevron-container {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  position: absolute;
+  bottom: 10px;
+}
+
+.container .section-container {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section-container:last-of-type {
+  margin-bottom: 100px;
+}
+
+.container #habits-container #habits-title h2 {
+  font-size: 32px;
+}
+
+.container #habits-container #habits-title h2 span {
+  color: #FFC579;
+}
+
+.container #habits-container #habits-title #habits {
+  max-width: 536px;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.container #habits-container #habits-description {
+  width: 611px;
+  height: 560px;
+  padding: 64px;
+  line-height: 32px;
+  border-radius: 32px;
+  background: #FFC579;
+  margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -1;
+}
+
+.container #habits-container #habits-description h3 {
+  max-width: 317px;
+  font-size: 28px;
+  text-align: right;
+}
+
+.container #habits-container #habits-description p {
+  font-size: 20px;
+  text-align: right;
+  max-width: 301px;
 }
