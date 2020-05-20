@@ -121,6 +121,7 @@ body >div {
 .container #habits-container #habits-title #habits {
   max-width: 536px;
   margin-top: 32px;
+  margin-left: -16px;
   padding: 0;
 }
 
